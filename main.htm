@@ -1,0 +1,335 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>El Harnero</title>
+	<meta name="keywords" content="pasteleria, bolleria, artesana, harnero, pasteles, tartas, cumpleasños, pedrajas, iscar, valladolid"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+</head>
+
+<body>
+	<div id="mask"></div>
+	<div id="popup">
+		<span class="close"><img src="images/close_grey.jpg" onclick="cerrarPopup()" alt="cerrar"></img></span>
+		<div class="float"><img id="imgProduct"src=""></img></div>
+		<p id="titleProduct" class="title bold"></p>		
+		<br />
+		<p id="textProduct" class="desc"></>
+	</div>
+	
+	<div id="container">
+	
+		<div id="header_bg"></div>
+		
+		<div id="header">
+			<h2>Pastelería artesana</h2>
+			<h1>El Harnero</h1>			
+		</div>
+		
+		<div id="menu-h">
+			<ul>
+				<li><a id="inicioLnk" href="#" onClick="mostrarInicio()" class="active">Inicio</a></li>
+                		<li><a id="productosLnk" onClick="mostrarProductos()" href="#">Productos</a></li>
+				<li><a id="empresaLnk" href="#" onClick="mostrarEmpresa()">De temporada</a></li>
+				<li><a id="fotosLnk" href="#" onClick="mostrarFotos()">Fotos</a></li>
+				<li><a id="contactoLnk" href="#" onClick="mostrarContactos()">Contacto</a></li>
+			</ul>
+		</div>
+		
+		<div id="main">
+		
+			<div id="content">
+			
+				<!-- Inicio -->
+				<div id="inicio" class="visible">
+					<h2>¿Qué ofrecemos en nuestro obrador?</h2>
+					<p class="intro">La <span class="italic">Pastelería Artesana El Harnero</span> se caracteriza por utilizar materias primas de primerisima calidad y por vender en sus tiendas productos frescos.</p>
+					<p class="intro">Eleboramos todos los dias nuestros productos como pasteles, empanadas y hojaldres.</p>
+					<p class="intro">Nosotros <span class="bold underline">no</span> utilizamos la congelación para facilitar el trabajo sino que lo producimos todos los dias para que los productos lleguen al cliente siempre frescos.</p>
+					<p class="intro">En nuestro establecimiento no hay posibilidades de contraer enfermedades derivadas del huevo ya que utilizamos huevo ultra-pasteurizado.</p>
+
+					<h2>Localización</h2>
+					<p>Para más información por favor acceda a la sección <a href="#" onClick="mostrarContactos()">contacto</a>.</p>
+				</div>
+				
+				<!-- Productos -->
+				<div id="productos" class="hidden">									
+					<h2>Productos todo el año</h2>
+					<ul>
+						<li onclick="mostrarPopup(0)">Mousses y semifríos</li>
+						<li onclick="mostrarPopup(1)">Tartas infantiles de cumpleaños</li>
+						<li onclick="mostrarPopup(2)">Brazos de gitano</li>
+						<li>Tartas tradicionales</li>
+						<li>Tartas de boda</li>
+						<li>Pasteles de caramelo de chocolate</li>
+						<li>Pasteles de nata</li>
+						<li onclick="mostrarPopup(3)">Empanadas de hojaldre (jamón york o atún)</li>
+						<li onclick="mostrarPopup(4)">Hojaldres bañados</li>
+						<li>Hojaldres de mantequilla</li>
+						<li onclick="mostrarPopup(5)">Pastas de té</li>
+						<li onclick="mostrarPopup(6)">Bollos variados</li>
+					</ul>	
+				</div>
+				
+				<!-- Empresa -->
+				<div id="empresa" class="hidden">					
+					<h2>Productos de temporada</h2>
+					<ul>
+						<li onclick="mostrarPopup(9)">Turrones navideños</li>
+						<li onclick="mostrarPopup(7)">Mazapanes</li>
+						<li>Buñuelos en los Santos</li>
+						<li>Huesos de Santo</li>
+						<li>Ojuelas de carnavales</li>
+						<li onclick="mostrarPopup(8)">Roscón de Reyes</li>
+					</ul>						
+				</div>
+	
+				<!-- Fotos -->
+				<div id="fotos" class="hidden">
+					<h2>Galería fotográfica</h2>
+					<div class="galeria">   						
+						<a rel="example_group" href="fotos/2.jpg" title="Tarta infantil spiderman"><img  alt="" src="fotos/2.jpg"></a>
+						<a rel="example_group" href="fotos/3.jpg" title="Tarta infantil Bob Esponja"><img  alt="" src="fotos/3.jpg"></a>
+						<a rel="example_group" href="fotos/1.jpg" title="Tarta infantil fútbol"><img  alt="" src="fotos/1.jpg"></a>						
+						<a rel="example_group" href="fotos/6.jpg" title="Tarta comunión"><img  alt="" src="fotos/6.jpg"></a>
+						<a rel="example_group" href="fotos/7.jpg" title="Tarta despedida de soltera"><img  alt="" src="fotos/7.jpg"></a>
+						<a rel="example_group" href="fotos/8.jpg" title="Semifrio queso y mandarina"><img  alt="" src="fotos/8.jpg"></a>
+						<a rel="example_group" href="fotos/9.jpg" title="Semifrio vainilla y caramelo"><img  alt="" src="fotos/9.jpg"></a>						
+						<a rel="example_group" href="fotos/10.jpg" title="Semifrios individuales variados"><img  alt="" src="fotos/10.jpg"></a>												
+						<a rel="example_group" href="fotos/5.jpg" title="Brazo de piñones"><img  alt="" src="fotos/5.jpg"></a>
+						<a rel="example_group" href="fotos/12.jpg" title="Brazo trufa-nata"><img  alt="" src="fotos/12.jpg"></a>						
+						<a rel="example_group" href="fotos/14.jpg" title="Empanada de hojaldre"><img  alt="" src="fotos/14.jpg"></a>
+						<a rel="example_group" href="fotos/11.jpg" title="Hojaldres bañados"><img  alt="" src="fotos/11.jpg"></a>						
+						<a rel="example_group" href="fotos/13.jpg" title="Bollos variados"><img  alt="" src="fotos/13.jpg"></a>						
+						<a rel="example_group" href="fotos/4.jpg" title="Madalenas"><img  alt="" src="fotos/4.jpg"></a>						
+						<a rel="example_group" href="fotos/15.jpg" title="Pastas de té"><img  alt="" src="fotos/15.jpg"></a>
+
+						<a rel="example_group" href="fotos/16.jpg" title="Turrón Frutos secos"><img  alt="" src="fotos/16.jpg"></a>
+						<a rel="example_group" href="fotos/17.jpg" title="Turrón Nata - Nuez"><img  alt="" src="fotos/17.jpg"></a>						
+						<a rel="example_group" href="fotos/18.jpg" title="Turrón de Baileys"><img  alt="" src="fotos/18.jpg"></a>												
+						<a rel="example_group" href="fotos/19.jpg" title="Turrón Frutos secos"><img  alt="" src="fotos/19.jpg"></a>
+						<a rel="example_group" href="fotos/20.jpg" title="Turrón Crocantí Piñón	"><img  alt="" src="fotos/20.jpg"></a>						
+						<a rel="example_group" href="fotos/21.jpg" title="Turrón Gianduja - Café"><img  alt="" src="fotos/21.jpg"></a>
+
+						<a rel="example_group" href="fotos/mazapanes.jpg" title="Mazapanes"><img  alt="" src="fotos/mazapanes.jpg"></a>						
+						<a rel="example_group" href="fotos/roscon.jpg" title="Roscón de Reyes"><img  alt="" src="fotos/roscon.jpg"></a>						
+
+						<a rel="example_group" href="fotos/22.jpg" title="Feliz Navidad!"><img  alt="" src="fotos/22.jpg"></a>												
+					</div>
+				</div>
+				
+				<!-- Contactos -->
+				<div id="contacto" class="hidden">
+					<h2>Pedrajas de San Esteban</h2>
+					<blockquote>
+						<span>C/ Libertad, 23 | <a rel="foto_pedrajas" href="images/TiendaPedrajas.jpg" title="Tienda en Pedrajas de San Esteban">Ver foto</a></span>
+						<span>47430 Pedrajas de San Esteban, Valladolid</span>
+						<span>Teléfono: <a href="tel:983625112">983 625 112</a> | <a href="mailto:elharnero@hotmail.es">elharnero [at] hotmail.es</a></span>
+						<span><img src="images/map.png" alt="icon"></img><a id="mapPedrajasLnk" href="#" onClick="cambiarMapaPedrajas ()">Ver mapa</a></span>
+						
+					</blockquote>
+					<div id="map_canvas" class="map"></div>					
+					<h2>Iscar</h2>
+					<blockquote>
+						<span>C/ Severino Pascual, 3 | <a rel="foto_iscar" href="images/TiendaIscar.jpg" title="Tienda en Iscar">Ver foto</a></span>
+						<span>47420 Iscar, Valladolid</span>
+						<span>Teléfono: <a href="tel:983611085">983 611 085</a> | <a href="mailto:elharnero@hotmail.es">elharnero [at] hotmail.es</a></span>
+						<span><img src="images/map.png" alt="icon"></img><a id="mapIscarLnk" href="#" onClick="cambiarMapaIscar ()">Ver mapa</a></span>
+						
+					</blockquote>
+					<div id="map_canvas_2" class="map"></div>					
+				</div>
+			</div>
+		
+			<div id="menu-v">
+				<h1>Menú</h1>
+				<ul>
+					<li><a href="#" class="bold" onClick="mostrarInicio()">Inicio</a></li>
+					<li><a href="#" class="bold" onClick="mostrarProductos()">Productos</a></li>
+					<li><a href="#" class="bold" onClick="mostrarEmpresa()">De Temporada</a></li>
+					<li><a href="#" class="bold" onClick="mostrarFotos()">Fotos</a></li>
+					<li><a href="#" class="bold" onClick="mostrarContactos()">Contacto</a></li>
+				</ul>				
+			</div>
+		
+		</div>
+		
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+		<p>&copy; 2012 Cristian Rodríguez de la Cruz</p>
+	</div>
+	
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> 
+	<!-- load jQuery -->
+    <script type="text/javascript" src="script/jquery.min.js"></script>
+	<script>
+		!window.jQuery && document.write('<script src="jquery-1.4.3.min.js"><\/script>');
+	</script>
+	<script type="text/javascript" src="./fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="./fancybox/jquery.fancybox-1.3.4.pack.js"></script>	
+	<script>
+
+		var seccionActual = 'inicio';
+		
+		function mostrarSeccion (sec) {
+			setTimeout (function () {
+				if (seccionActual != sec) {					
+					$('#' + seccionActual).hide();					
+					$('#' + seccionActual + 'Lnk').removeClass ('active');					
+					seccionActual = sec;					
+					$('#' + seccionActual).show();
+					$('#' + seccionActual + 'Lnk').addClass ('active');					
+				}			
+			}, 0);			
+		}
+		
+		var products = [];
+		products.push ({img: 'fotos/8.jpg', title: 'Semi-fríos', text: 'Disponemos de una gran variedad de semi-fríos siendo los más característicos de nuestro establecimiento el de vainilla-caramelo y el de queso-mandarina'});
+		products.push ({img: 'fotos/2.jpg', title: 'Tartas infantiles', text: 'Disponemos de gran variedad de tartas infantiles de todos los sabores. <br/>Tenemos la posibilidad de personalizar tartas para nuestros clientes. <br/>Las más divertidas obleas desde equipos de fútbol hasta cualquier dibujo animado.'});
+		products.push ({img: 'fotos/12.jpg', title: 'Brazos de gitano', text: 'Disponemos de dos tipos de decoración al gusto del cliente brazo o tronco. <br/>Se pueden elaborar de todo tipo de sabores siendo nuestro brazo de piñones el más popular de todas las variedades. <br/>Otro tipo muy tradicional en nuestro obrador es el exquisito brazo de hojaldre'});
+		products.push ({img: 'fotos/14.jpg', title: 'Empanadas', text: 'Actualmente elaboramos dos tipos de empanadas de hojaldre: de atún (atún, tomate, pisto y huevo) y de jamón york y queso'});
+		products.push ({img: 'fotos/11.jpg', title: 'Hojaldres bañados', text: 'Nuestro establecimiento es famoso por sus elaboraciones de hojaldre de las cuales la más famosa son los hojaldres bañados son hojaldres bañados con nuestro almíbar especial.'});
+		products.push ({img: 'fotos/15.jpg', title: 'Pastas de té', text: 'Nuestras famosas pastas de té están elaboradas de forma artesana, utilizamos las mismas herramientas que hace 50 años siendo la principal nuestras manos. <br/>Son pastas rellenas de diferentes sabores y están decoradas con diferentes coberturas de chocolate. <br/>La base de la elaboración de estas pastas son la mantequilla y las mejores coberturas'});
+		products.push ({img: 'fotos/13.jpg', title: 'Bollos variados', text: '<span class="bold">Empiñonados</span> <br/>es el bollo más tradicional de nuestra pastelería, ya que su ingrediente principal el piñón es uno de los emblemas de nuestra localidad. Está elaborado con una receta que ha ido pasando de generación en generación al más puro estilo artesano.<br/> <span class="bold">Bollos blancos</span><br />Un bollo exquisito elaborado de forma tradicional.<br /><span class="bold">Pastas de coco</span><br />Su principal característica a parte de su exclusivo sabor es que en su elaboración se realiza con aceite de oliva.'});
+		products.push ({img: 'fotos/mazapanes.jpg', title: 'Mazapanes', text: '...'});
+		products.push ({img: 'fotos/roscon.jpg', title: 'Roscón de Reyes', text: '...'});
+		products.push ({img: 'fotos/turron.jpg', title: 'Turrones navideños', text: 'Turrón Piñón, Gianduja, Crocantí, Frutos secos, Baileys, Nata-Nuez, etc'});
+		
+		
+		function mostrarPopup (i) {
+		    var p = products[i];
+			document.getElementById ('titleProduct').innerHTML = p.title;
+			document.getElementById ('textProduct').innerHTML = p.text;
+			document.getElementById ('imgProduct').src = p.img;
+			$('#mask').show();					
+			$('#popup').show(400);								
+		}
+		
+		function cerrarPopup () {
+			$('#mask').hide();					
+			$('#popup').hide(400);					
+		}
+		
+		var mapsPedrajasLoaded = false;
+		var mapsIscarLoaded = false;
+		
+		function cambiarMapaPedrajas () {
+			var display = document.getElementById ('map_canvas').style.display;			
+			if (display === 'block' ) {
+				document.getElementById ('map_canvas').style.display = 'none'; 
+				document.getElementById ('mapPedrajasLnk').innerHTML = 'Ver mapa'; 								
+			} else {
+				document.getElementById ('map_canvas').style.display = 'block'; 
+				document.getElementById ('mapPedrajasLnk').innerHTML = 'Ocultar mapa'; 				
+				cargaMapa ('Pedrajas');
+			}			
+		}
+		
+		function cambiarMapaIscar () {
+			var display = document.getElementById ('map_canvas_2').style.display;
+			if (display === 'block') {
+				document.getElementById ('map_canvas_2').style.display = 'none'; 
+				document.getElementById ('mapIscarLnk').innerHTML = 'Ver mapa'; 								
+			} else {
+				document.getElementById ('map_canvas_2').style.display = 'block'; 
+				document.getElementById ('mapIscarLnk').innerHTML = 'Ocultar mapa'; 				
+				cargaMapa ('Iscar');
+			}			
+		}
+		
+		function cargaMapa (mapa) {
+			if (mapa === 'Pedrajas') {
+				if (!mapsPedrajasLoaded) {
+					var pedrajas = new google.maps.LatLng(41.339982,-4.579722);
+                        var mapOptions = {
+     	                  zoom: 16,
+                          center: pedrajas,
+                          mapTypeId: google.maps.MapTypeId.ROADMAP
+					};
+          
+					var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions); 
+    
+					var coordInfoWindow = new google.maps.InfoWindow({content: "El Harnero en Pedrajas de San Esteban"});
+					coordInfoWindow.setPosition(pedrajas);
+					coordInfoWindow.open(map);
+					//mapsPedrajasLoaded = true;
+				}	
+			} else {
+				if (!mapsIscarLoaded) {
+					var iscar = new google.maps.LatLng(41.361133,-4.531255);
+                        var mapOptions2 = {
+     	                  zoom: 16,
+                          center: iscar,
+                          mapTypeId: google.maps.MapTypeId.ROADMAP
+					};
+          
+					var map2 = new google.maps.Map(document.getElementById("map_canvas_2"), mapOptions2); 
+    
+					var coordInfoWindow = new google.maps.InfoWindow({content: "El Harnero en Iscar"});
+					coordInfoWindow.setPosition(iscar);
+					coordInfoWindow.open(map2);
+					//mapsIscarLoaded = true;
+				}
+			}			
+		}
+		
+		function mostrarContactos () {		
+			mostrarSeccion ('contacto');			
+		}
+
+		function mostrarProductos () {
+			mostrarSeccion ('productos');			
+		}
+		
+		function mostrarEmpresa () {
+			mostrarSeccion ('empresa');	
+		}
+		
+		function mostrarInicio () {
+			mostrarSeccion ('inicio');	
+		}
+
+        var galleryLoaded = false;
+
+		function mostrarFotos () {
+			mostrarSeccion ('fotos');				             
+		}
+		
+		$(document).ready(function() {
+			
+			$("a[rel=example_group]").fancybox({
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Foto ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
+			
+			$("a[rel=foto_pedrajas]").fancybox({
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">'+ title + '</span>';
+				}
+			});
+			
+			$("a[rel=foto_iscar]").fancybox({
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">'+ title + '</span>';
+				}
+			});
+
+			
+		});
+
+	</script>
+</body>
+
+</html>
