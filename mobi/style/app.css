@@ -16,6 +16,7 @@ html, body {
 
 section[role="region"] > header:first-child {
   background-color: #fef300;
+  border-bottom: 1px solid #391B1B;
 }
 
 section[role="region"] > header:first-child h1 {
@@ -47,8 +48,12 @@ section[role="region"][data-viewport="left"] {
   transform: translateX(-100%);
 }
 
+h2 {
+  font-size: 1.4rem;
+}
+
 p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 @media only screen and (min-width : 320px) and (max-width : 480px) {
