@@ -11,6 +11,7 @@ html, body {
   border: none;
   font-size: 10px;
   background: #fff url(../../images/pattern.jpg) repeat top left;
+  overflow: hidden;
 }
 
 section[role="region"] > header:first-child {
@@ -29,6 +30,8 @@ section[role="region"] {
   top: 0;
   left: 0;
   right: 0;
+  bottom: 0;
+  overflow-y: auto;
   transition: transform 0.3s ease;
 }
 
