@@ -23,7 +23,7 @@ section[role="region"] > header:first-child h1 {
   color: #391B1B;
   font-weight: 300;
   font-family: "El harnero";
-  font-size: 2.8rem;
+  font-size: 3.4rem;
   font-style: normal;
 }
 
@@ -64,16 +64,16 @@ section[role="region"][data-viewport="left"] {
   transform: translateX(-100%);
 }
 
-section[role="region"] h2 {
+.info h2 {
   font-size: 1.2rem;
 }
 
-section[role="region"] p {
+.info p {
   font-size: 1rem;
   color: #391B1B;
 }
 
-section[role="region"] a {
+.info a {
   text-decoration: none;
   color: #391B1B;
   font-size: 1.2rem;
