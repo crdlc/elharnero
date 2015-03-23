@@ -76,10 +76,11 @@ p {
 a {
   text-decoration: none;
   color: #391B1B;
+  font-size: 1.2rem;
 }
 
 .expand {
-  width: calc(100% - 3rem);
+  width: 100%;
   text-align: center;
 }
 
