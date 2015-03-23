@@ -64,16 +64,16 @@ section[role="region"][data-viewport="left"] {
   transform: translateX(-100%);
 }
 
-h2 {
+section[role="region"] h2 {
   font-size: 1.2rem;
 }
 
-p {
+section[role="region"] p {
   font-size: 1rem;
   color: #391B1B;
 }
 
-a {
+section[role="region"] a {
   text-decoration: none;
   color: #391B1B;
   font-size: 1.2rem;
