@@ -6,6 +6,7 @@
 
   function appendOption(option) {
     var item = document.createElement('li');
+    item.id = option.id;
     var name = document.createElement('p');
     name.textContent = option.name;
     item.appendChild(name);
@@ -14,17 +15,17 @@
     item.appendChild(description);
     list.appendChild(item);
     item.addEventListener('click', function() {
-      var option = item.querySelector('p:nth-child(1)').textContent.
-                   toLowerCase();
+      var option = item.id;
+      alert(option);
     });
   }
 
   var options = [
-    { name: 'Inicio', description: '¿Quiénes somos?'},
-    { name: 'Productos', description: '¿Qué elaboramos?'},
-    { name: 'De Temporada', description: 'Nuestros productos de temporada'},
-    { name: 'Fotos', description: 'Imágenes de nuestras delicias artesanas'},
-    { name: 'Contacto', description: 'Visitanos en la provincia de Valladolid'}
+    { id: 'inicio', name: 'Inicio', description: '¿Quiénes somos?'},
+    { id: 'productos', name: 'Productos', description: '¿Qué elaboramos?'},
+    { id: 'temporada', name: 'De Temporada', description: 'Nuestros productos de temporada'},
+    { id: 'fotos', name: 'Fotos', description: 'Imágenes de nuestras delicias artesanas'},
+    { id: 'contacto', name: 'Contacto', description: 'Visitanos en la provincia de Valladolid'}
   ];
 
   options.forEach(function(option) {
