@@ -23,27 +23,14 @@ section[role="region"] > header:first-child h1 {
   font-family: "El harnero";
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  html, body {
-    font-size: 12.5px;
-  }
-}
-
 @media (-webkit-min-device-pixel-ratio: 1.5),
        ( min--moz-device-pixel-ratio: 1.5),
        ( min-device-pixel-ratio: 1.5),
        ( min-resolution: 144dpi),
        ( min-resolution: 1.5dppx) {
   html, body {
-    font-size: 12.5px;
-    background: blue;
-  }
-}
-
-@media only screen and (min-device-width : 480px) and (max-device-width : 640px) {
-  html, body {
     font-size: 15px;
-    background: red;
+    background: blue;
   }
 }
 
@@ -53,8 +40,21 @@ section[role="region"] > header:first-child h1 {
        ( min-resolution: 192dpi),
        ( min-resolution: 2dppx) {
   html, body {
-    font-size: 15px;
+    font-size: 20px;
     background: purple;
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  html, body {
+    font-size: 12.5px;
+  }
+}
+
+@media only screen and (min-device-width : 480px) and (max-device-width : 640px) {
+  html, body {
+    font-size: 15px;
+    background: red;
   }
 }
 
