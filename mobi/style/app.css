@@ -30,7 +30,19 @@ section[role="region"] > header:first-child h1 {
   }
 }
 
+@media screen and (min-resolution: 1.5dppx) {
+  html, body {
+    font-size: 12.5px;
+  }
+}
+
 @media (min-width: 640px) {
+  html, body {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-resolution: 2dppx) {
   html, body {
     font-size: 15px;
   }
