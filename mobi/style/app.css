@@ -23,6 +23,26 @@ section[role="region"] > header:first-child h1 {
   font-family: "El harnero";
 }
 
+section[role="region"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: transform 0.3s ease;
+}
+
+section[role="region"][data-viewport="center"] {
+  transform: translateX(0);
+}
+
+section[role="region"][data-viewport="right"] {
+  transform: translateX(100%);
+}
+
+section[role="region"][data-viewport="left"] {
+  transform: translateX(-100%);
+}
+
 @media only screen and (min-width : 320px) and (max-width : 480px) {
   html, body {
     font-size: 12.5px;
