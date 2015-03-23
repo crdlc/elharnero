@@ -36,12 +36,14 @@ section[role="region"] > header:first-child h1 {
        ( min-resolution: 1.5dppx) {
   html, body {
     font-size: 12.5px;
+    background: blue;
   }
 }
 
 @media only screen and (min-device-width : 480px) and (max-device-width : 640px) {
   html, body {
     font-size: 15px;
+    background: red;
   }
 }
 
@@ -52,17 +54,20 @@ section[role="region"] > header:first-child h1 {
        ( min-resolution: 2dppx) {
   html, body {
     font-size: 15px;
+    background: purple;
   }
 }
 
 @media only screen and (min-device-width : 640px) and (max-device-width : 800px) {
   html, body {
     font-size: 17.5px;
+    background: green;
   }
 }
 
 @media only screen and (min-device-width: 800px) {
   html, body {
     font-size: 20px;
+    background: yellow;
   }
 }
