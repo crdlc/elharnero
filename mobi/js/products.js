@@ -4,8 +4,6 @@ var Products = (function() {
 
   var popup = document.getElementById('popup');
 
-  var displayed = false;
-
   var products = [];
   products.push ({img: '../fotos/8.jpg', title: 'Semi-fríos', text: 'Disponemos de una gran variedad de semi-fríos siendo los más característicos de nuestro establecimiento el de vainilla-caramelo y el de queso-mandarina'});
   products.push ({img: '../fotos/2.jpg', title: 'Tartas infantiles', text: 'Disponemos de gran variedad de tartas infantiles de todos los sabores. <br/>Tenemos la posibilidad de personalizar tartas para nuestros clientes. <br/>Las más divertidas obleas desde equipos de fútbol hasta cualquier dibujo animado.'});
@@ -26,7 +24,6 @@ var Products = (function() {
     popup.querySelector('section .foot').innerHTML = product.text;
 
     Navigation.go('popup');
-    displayed = true;
   }
 
   function onClick(evt) {
