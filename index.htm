@@ -4,25 +4,46 @@
         <title>El Harnero</title>
        	<meta charset="UTF-8">
         <meta name="description" content="El Harnero" />
-        <meta name="keywords" content="pasteleria, bolleria, artesana, harnero, pasteles, tartas, cumpleasños, pedrajas, iscar, valladolid"/>
-        <link rel="stylesheet" href="css/index.css" type="text/css" media="screen"/>        
+        <meta name="keywords" content="pasteleria, bolleria, artesana, harnero, pasteles, tartas, cumpleaños, pedrajas, iscar, valladolid"/>
+        <script type="text/javascript">
+            var isMobile = {
+                Android: function() {
+                    return /Android/i.test(navigator.userAgent);
+                },
+                BlackBerry: function() {
+                    return /BlackBerry/i.test(navigator.userAgent);
+                },
+                iOS: function() {
+                    return /iPhone|iPad|iPod/i.test(navigator.userAgent);
+                },
+                Windows: function() {
+                    return /IEMobile/i.test(navigator.userAgent);
+                },
+                any: function() {
+                    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+                }
+            };
+
+            (isMobile.any()) && (window.location = 'mobi/index.html');
+        </script>
+        <link rel="stylesheet" href="css/index.css" type="text/css" media="screen"/>
     </head>
 
     <body>
-        <div id="content">            
+        <div id="content">
             <div class="title"><h2>Pastelería artesana</h2><h1>El Harnero</h1></div>
             <div class="reference">
-                <p><a href="main.htm">ENTRAR</a></p>                
+                <p><a href="main.htm">ENTRAR</a></p>
             </div>
 
 
-            <ul class="accordion" id="accordion">                
+            <ul class="accordion" id="accordion">
                 <li class="bg2">
                     <div class="heading">Servicio</div>
                     <div class="bgDescription"></div>
                     <div class="description">
                         <h2>Más cerca</h2>
-                        <p>Para dar un servicio más cercano al cliente disponemos de dos pastelerías en la provincia de Valladolid. La primera de ellas la pueden encontrar en Pedrajas de San Esteban y la segunda en la localidad de Iscar.</p>                        
+                        <p>Para dar un servicio más cercano al cliente disponemos de dos pastelerías en la provincia de Valladolid. La primera de ellas la pueden encontrar en Pedrajas de San Esteban y la segunda en la localidad de Iscar.</p>
 						<p><a href="#">¿Quiere conocernos?...</a></p>
                     </div>
                 </li>
@@ -31,24 +52,24 @@
                     <div class="bgDescription"></div>
                     <div class="description">
                         <h2>Tradición</h2>
-                        <p>... desde muy pequeños aprendemos y disfrutamos de esta profesión.</p>                        
-                    </div>					
-                </li>                                
+                        <p>... desde muy pequeños aprendemos y disfrutamos de esta profesión.</p>
+                    </div>
+                </li>
 				<li class="bg3">
                     <div class="heading">Calidad</div>
                     <div class="bgDescription"></div>
                     <div class="description">
                         <h2>Productos</h2>
-                        <p>Entre nuestras elaboraciones destacamos: variedad en empanadas caseras, hojaldres bañados, tartas (bodas, infantiles), pastas de té y pastelería.</p>                        
-                    </div>					
+                        <p>Entre nuestras elaboraciones destacamos: variedad en empanadas caseras, hojaldres bañados, tartas (bodas, infantiles), pastas de té y pastelería.</p>
+                    </div>
                 </li>
 				<li class="bg4 bleft">
                     <div class="heading">Artesana</div>
                     <div class="bgDescription"></div>
                     <div class="description">
                         <h2>Artesana</h2>
-                        <p>Obrador artesano que ofrece multitud de especialidades durante todo el año y además exquisitos productos de temporada.</p>                        
-                    </div>					
+                        <p>Obrador artesano que ofrece multitud de especialidades durante todo el año y además exquisitos productos de temporada.</p>
+                    </div>
                 </li>
             </ul>
         </div>

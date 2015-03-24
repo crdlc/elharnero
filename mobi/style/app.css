@@ -156,7 +156,6 @@ section[role="region"][data-level="3"] {
 }
 
 .gallery ul > li:active {
-  transform: scale(.8);
   opacity: .6;
 }
 
