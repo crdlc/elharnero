@@ -44,7 +44,7 @@ section[role="region"] {
   right: 0;
   bottom: 0;
   background: #fff url(../../images/pattern.jpg) repeat top left;
-  transition: transform 0.5s ease;
+  transition: transform 0.4s ease-in-out;
 }
 
 section[role="region"] section {
@@ -92,9 +92,9 @@ section[role="region"][data-level="3"] {
 }
 
 .expand img {
-  width: calc(100% - 1rem);
+  width: auto;
   height: auto;
-  max-height: calc(100% - 1rem);
+  max-width: calc(100% - 1rem);
   padding: .5rem;
 }
 
