@@ -2,6 +2,20 @@
 
 var Navigation = (function() {
 
+  var views = {
+    'main': '',
+    'inicio': '',
+    'productos': '',
+    'temporada': '',
+    'fotos': '',
+    'contacto': '',
+    'popup': ''
+  };
+
+  Object.keys(views).forEach(function(key) {
+    views[key] = document.getElementById(key).dataset.level;
+  });
+
   var current = 'main';
   var previous = current;
 
@@ -15,17 +29,27 @@ var Navigation = (function() {
 
   window.addEventListener('hashchange', function () {
     var target = location.hash.split('/')[1];
-    if (current === target) {
+
+    if (target === current) {
       return;
     }
-    previous = current;
-    current = target;
 
-    document.getElementById(current).dataset.viewport = 'center';
-
-    document.getElementById(previous).dataset.viewport =
-      previous === 'main' ? 'left' : 'right';
-
+    if (views[target] === '3') {
+      document.getElementById(target).dataset.viewport = 'center';
+      previous = current;
+      current = target;
+    } else if (views[target] === '1') {
+      document.getElementById(current).dataset.viewport = 'right';
+      previous = current = target;
+    } else if (views[target] === '2') {
+      if (views[current] === '1') {
+        document.getElementById(target).dataset.viewport = 'center';
+      } else {
+        document.getElementById(current).dataset.viewport = 'bottom';
+      }
+      previous = 'main';
+      current = target;
+    }
   });
 
   go(current);

@@ -13,11 +13,12 @@
     <script type="text/javascript" defer src="shared/js/lazy_loader.js"></script>
 
     <script type="text/javascript" defer src="js/navigation.js"></script>
+    <script type="text/javascript" defer src="js/products.js"></script>
     <script type="text/javascript" defer src="js/main.js"></script>
   </head>
 
   <body>
-    <section id="main" role="region" data-viewport="center">
+    <section id="main" role="region" data-level="1">
       <header>
         <h1>Pastelería - El Harnero</h1>
       </header>
@@ -27,7 +28,7 @@
       </section>
     </section>
 
-    <section id="inicio" role="region" data-viewport="right">
+    <section id="inicio" role="region" data-viewport="right" data-level="2">
       <header>
         <button class="icon icon-back"></button>
         <h1>Sobre nosotros</h1>
@@ -41,47 +42,47 @@
       </section>
     </section>
 
-    <section id="productos" role="region" data-viewport="right">
+    <section id="productos" role="region" data-viewport="right" data-level="2">
       <header>
         <button class="icon icon-back"></button>
         <h1>Productos</h1>
       </header>
       <section data-type="list">
         <ul>
-          <li><p>Mousses y semifríos</p></li>
-          <li><p>Tartas infantiles de cumpleaños</p></li>
-          <li><p>Brazos de gitano</p></li>
+          <li data-id="product/0"><p>Mousses y semifríos</p></li>
+          <li data-id="product/1"><p>Tartas infantiles de cumpleaños</p></li>
+          <li data-id="product/2"><p>Brazos de gitano</p></li>
           <li><p>Tartas tradicionales</p></li>
           <li><p>Tartas de boda</p></li>
           <li><p>Pasteles de caramelo de chocolate</p></li>
           <li><p>Pasteles de nata</p></li>
-          <li><p>Empanadas de hojaldre (jamón york o atún)</p></li>
-          <li><p>Hojaldres bañados</p></li>
+          <li data-id="product/3"><p>Empanadas de hojaldre (jamón york o atún)</p></li>
+          <li data-id="product/4"><p>Hojaldres bañados</p></li>
           <li><p>Hojaldres de mantequilla</p></li>
-          <li><p>Pastas de té</p></li>
-          <li><p>Bollos variados</p></li>
+          <li data-id="product/5"><p>Pastas de té</p></li>
+          <li data-id="product/6"><p>Bollos variados</p></li>
         </ul>
       </section>
     </section>
 
-    <section id="temporada" role="region" data-viewport="right">
+    <section id="temporada" role="region" data-viewport="right" data-level="2">
       <header>
         <button class="icon icon-back"></button>
         <h1>De Temporada</h1>
       </header>
       <section data-type="list">
         <ul>
-          <li><p>Turrones navideños</p></li>
-          <li><p>Mazapanes</p></li>
+          <li data-id="product/9"><p>Turrones navideños</p></li>
+          <li data-id="product/7"><p>Mazapanes</p></li>
           <li><p>Buñuelos en los Santos</p></li>
           <li><p>Huesos de Santo</p></li>
           <li><p>Ojuelas de carnavales</p></li>
-          <li><p>Roscón de Reyes</p></li>
+          <li data-id="product/8"><p>Roscón de Reyes</p></li>
         </ul>
       </section>
     </section>
 
-    <section id="fotos" role="region" data-viewport="right">
+    <section id="fotos" role="region" data-viewport="right" data-level="2">
       <header>
         <button class="icon icon-back"></button>
         <h1>Fotos</h1>
@@ -91,7 +92,7 @@
       </section>
     </section>
 
-    <section id="contacto" role="region" data-viewport="right">
+    <section id="contacto" role="region" data-viewport="right" data-level="2">
       <header>
         <button class="icon icon-back"></button>
         <h1>Nuestras Tiendas</h1>
@@ -108,6 +109,17 @@
         <p>47420 Iscar, Valladolid</p>
         <p class="expand box two"><a href="tel:983611085" target="_blank">+34 983 611 085</a><a target="_blank" href="mailto:elharnero@hotmail.es">elharnero@hotmail.es</a></p>
         <p class="expand box three"><a target="_blank" href="https://www.google.es/maps/place/Pasteler%C3%ADa+Artesana+El+Harnero/@41.3611753,-4.5312443,18z/data=!4m7!1m4!3m3!1s0x0:0x0!2zNDHCsDIxJzQwLjEiTiA0wrAzMSc1Mi41Ilc!3b1!3m1!1s0x0000000000000000:0xf0311821bc8eb120">Ver mapa</a><a target="_blank" href="https://www.google.com/maps/place/Pasteler%C3%ADa+Artesana+El+Harnero/@41.361246,-4.531029,2a,90y,90t/data=!3m5!1e2!3m3!1shttps:%2F%2Flh6.googleusercontent.com%2F-fxkjCcxngi4%2FUxoDu5eUm7I%2FAAAAAAAL1P8%2FhHjWSyRsAh8%2Fs203%2Fphoto.jpg!2e4!3e12!4m5!1m2!2m1!1spasteleria+harnero+pedrajas+de+san+esteban+maps!3m1!1s0xd47257ab5c73915:0xf0311821bc8eb120!6m1!1e1">Ver interior</a><a target="_blank" href="https://www.google.es/maps/@41.361281,-4.531001,3a,90y,342h,90t/data=!3m5!1e1!3m3!1s33w_cPmAGtkAAAGuqsvLJA!2e0!3e2!6m1!1e1">Vista 3D</a></p>
+      </section>
+    </section>
+
+    <section id="popup" role="region" data-viewport="bottom" data-level="3">
+      <header>
+        <button class="icon icon-close"></button>
+        <h1>xx</h1>
+      </header>
+      <section class="expand">
+        <img></img>
+        <span class="foot"></span>
       </section>
     </section>
   </body>
