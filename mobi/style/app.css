@@ -92,9 +92,8 @@ section[role="region"][data-level="3"] {
 }
 
 .expand img {
-  width: auto;
+  width: calc(100% - 1rem);
   height: auto;
-  max-width: calc(100% - 1rem);
   max-height: calc(100% - 1rem);
   padding: .5rem;
 }

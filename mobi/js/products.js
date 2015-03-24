@@ -13,7 +13,7 @@ var Products = (function() {
   products.push ({img: '../fotos/14.jpg', title: 'Empanadas', text: 'Actualmente elaboramos dos tipos de empanadas de hojaldre: de atún (atún, tomate, pisto y huevo) y de jamón york y queso'});
   products.push ({img: '../fotos/11.jpg', title: 'Hojaldres bañados', text: 'Nuestro establecimiento es famoso por sus elaboraciones de hojaldre de las cuales la más famosa son los hojaldres bañados son hojaldres bañados con nuestro almíbar especial.'});
   products.push ({img: '../fotos/15.jpg', title: 'Pastas de té', text: 'Nuestras famosas pastas de té están elaboradas de forma artesana, utilizamos las mismas herramientas que hace 50 años siendo la principal nuestras manos. <br/>Son pastas rellenas de diferentes sabores y están decoradas con diferentes coberturas de chocolate. <br/>La base de la elaboración de estas pastas son la mantequilla y las mejores coberturas'});
-  products.push ({img: '../fotos/13.jpg', title: 'Bollos variados', text: '<span class="bold">Empiñonados</span> <br/>es el bollo más tradicional de nuestra pastelería, ya que su ingrediente principal el piñón es uno de los emblemas de nuestra localidad. Está elaborado con una receta que ha ido pasando de generación en generación al más puro estilo artesano.<br/> <span class="bold">Bollos blancos</span><br />Un bollo exquisito elaborado de forma tradicional.<br /><span class="bold">Pastas de coco</span><br />Su principal característica a parte de su exclusivo sabor es que en su elaboración se realiza con aceite de oliva.'});
+  products.push ({img: '../fotos/13.jpg', title: 'Bollos variados', text: '<span class="bold">Empiñonados</span> <br/>Es el bollo más tradicional de nuestra pastelería, ya que su ingrediente principal el piñón es uno de los emblemas de nuestra localidad. Está elaborado con una receta que ha ido pasando de generación en generación al más puro estilo artesano.<br/> <span class="bold">Bollos blancos</span><br />Un bollo exquisito elaborado de forma tradicional.<br /><span class="bold">Pastas de coco</span><br />Su principal característica a parte de su exclusivo sabor es que en su elaboración se realiza con aceite de oliva.'});
   products.push ({img: '../fotos/mazapanes.jpg', title: 'Mazapanes', text: '...'});
   products.push ({img: '../fotos/roscon.jpg', title: 'Roscón de Reyes', text: '...'});
   products.push ({img: '../fotos/turron.jpg', title: 'Turrones navideños', text: 'Turrón Piñón, Gianduja, Crocantí, Frutos secos, Baileys, Nata-Nuez, etc'});
@@ -38,6 +38,7 @@ var Products = (function() {
   }
 
   function onClose() {
+    popup.querySelector('section img').src = '';
     Navigation.back();
   }
 
