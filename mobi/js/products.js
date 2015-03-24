@@ -32,13 +32,13 @@ var Products = (function() {
   function onClick(evt) {
     var index = evt.target.dataset.id;
     if (index) {
+      popup.querySelector('section img').src = '';
       index = index.split('/')[1];
       show(index);
     }
   }
 
   function onClose() {
-    popup.querySelector('section img').src = '';
     Navigation.back();
   }
 

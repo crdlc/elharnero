@@ -44,7 +44,7 @@ section[role="region"] {
   right: 0;
   bottom: 0;
   background: #fff url(../../images/pattern.jpg) repeat top left;
-  transition: transform 0.4s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 section[role="region"] section {
