@@ -59,8 +59,6 @@ section[role="region"] section {
   overflow-y: auto;
   height: -moz-calc(100% - 5rem);
   height: -webkit-calc(100% - 5rem);
-  height: -o-calc(100% - 5rem);
-  height: calc(100% - 5rem);
 }
 
 section[role="region"][data-viewport="right"] {
