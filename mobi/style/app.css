@@ -108,8 +108,8 @@ section[role="region"][data-level="3"] {
 .expand img {
   width: auto;
   height: auto;
-  max-width: calc(100% - 1rem);
-  padding: .5rem;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .expand {
