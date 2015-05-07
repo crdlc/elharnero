@@ -57,7 +57,9 @@ var Pictures = (function() {
 
   function show(href, text) {
     popup.querySelector('header h1').textContent = text;
-    popup.querySelector('section img').src = href;
+    setTimeout(function() {
+      popup.querySelector('section img').src = href;
+    }, 300);
     popup.querySelector('section .foot').innerHTML = '';
 
     Navigation.go('popup');
