@@ -13,6 +13,10 @@ html, body {
   overflow: hidden;
 }
 
+section[role="region"] > header {
+  position: fixed;
+}
+
 section[role="region"] > header:first-child {
   background-color: #fef300;
   border-bottom: 1px solid #391B1B;
