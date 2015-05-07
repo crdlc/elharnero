@@ -57,7 +57,7 @@ section[role="region"] {
 
 section[role="region"] section {
   overflow-y: auto;
-  height: calc(100% - 5rem);
+  height: 100%;
 }
 
 section[role="region"][data-viewport="right"] {
