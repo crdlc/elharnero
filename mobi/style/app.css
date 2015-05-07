@@ -58,6 +58,7 @@ section[role="region"] {
 section[role="region"] section {
   overflow-y: auto;
   height: 100%;
+  margin-bottom: 5rem;
 }
 
 section[role="region"][data-viewport="right"] {
