@@ -8,10 +8,9 @@ var Pictures = (function() {
     var item = document.createElement('li');
     item.dataset.href = picture.href;
     item.dataset.text = picture.text;
-    var img = document.createElement('img');
-    img.src = picture.href;
-    item.appendChild(img);
+    item.style.backgroundImage = 'url(' + picture.href + ')';
     list.appendChild(item);
+    item.style.height = (item.offsetWidth - 80) + 'px';
     item.addEventListener('click', function() {
       var href = item.dataset.id;
       show(item.dataset.href, item.dataset.text);
